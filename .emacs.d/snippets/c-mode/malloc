@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: malloc
+# key: malloc
+# --
+${2:char} *${1:str} = malloc(sizeof($2) * $3);
+
+if (!$1)
+return NULL;

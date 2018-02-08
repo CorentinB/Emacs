@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: main3
+# key: main3
+# --
+int main(int ac, char **av, char **env)
+{
+	int error = 0;
+	return 0;
+}

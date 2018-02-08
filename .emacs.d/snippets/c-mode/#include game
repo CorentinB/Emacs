@@ -1,0 +1,63 @@
+# -*- mode: snippet -*-
+# name: #include game
+# key: #include
+# --
+
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define  $1
+
+#include <SFML/Audio.h>
+#include <SFML/Graphics.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include "my.h"
+#include "printf.h"
+
+#ifndef WIDTH_HEIGHT
+#define WIDTH 1920
+#define HEIGTH 1080
+#define MULT(type, a, b) ({			\
+			type c;			\
+			c = a * b;		\
+			c;			\
+		})
+#endif
+
+typedef struct window_param {
+	sfVideoMode mode;
+	sfRenderWindow *window;
+	sfEvent event;
+} param_t;
+
+typedef struct window_sprite {
+	sfSprite *sprite;
+	sfTexture *texture;
+	sfIntRect rect;
+} sprite_t;
+
+typedef struct window_sound {
+	sfSoundBuffer *buffer;
+	sfSound *sound;
+} sound_t;
+
+typedef struct window_text {
+	sfText *text;
+	sfFont *font;
+} text_t;
+
+typedef struct window_music {
+	sfMusic *music;
+} music_t;
+
+typedef struct window_clock {
+	sfClock *clock;
+	sfTime time;
+	float seconds;
+} clock_t;
+
+typedef struct game_data {
+	$0
+} game_t;
+
+#endif /* $1 */

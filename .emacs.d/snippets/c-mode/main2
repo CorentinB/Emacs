@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: main2
+# key: main2
+# --
+
+int main(int ac, char **av)
+{
+	int error = 0;
+	return error;
+}
