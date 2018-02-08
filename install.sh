@@ -12,6 +12,7 @@ safe_mkdir new_emacs
 
 cd new_emacs
 git clone https://github.com/Kaserta/Emacs.git
+
 cd
 cp -r .emacs.d old_emacs
 cp -r .emacs old_emacs
