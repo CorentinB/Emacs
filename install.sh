@@ -17,5 +17,5 @@ cd
 cp -r .emacs.d old_emacs
 cp -r .emacs old_emacs
 
-cp -r new_emacs/.emacs.d ./.emacs.d
-cp -r new_emacs/.emacs ./.emacs
+cp -r new_emacs/Emacs/.emacs.d ./.emacs.d
+cp -r new_emacs/Emacs/.emacs ./.emacs
