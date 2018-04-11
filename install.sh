@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 safe_mkdir () {
     if [ ! -d $1 ]; then
